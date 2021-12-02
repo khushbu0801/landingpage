@@ -12,20 +12,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
     <title>Home</title>
 </head>
 
 <body>
     <!--Navigation bar starts-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-css" style="--bs-bg-opacity: .9;">
             <div class="container">
                 <div id="navbarNavAltMarkupstart">
                     <div class="navbar-nav">
-                        <a href="" style="text-decoration: none; color: white; margin-right: 15px;"><img src="images/envelopecopy.svg"
-                                class="img-fluid mx-2" style="width: 20px; height: 20px;"> info@arcade.in</a>
-                        <a href="" style="text-decoration: none; color: white;"><img src="images/phonecopy.svg"
-                                class="img-fluid mx-2" style="width: 20px; height: 20px;"> 022 2886 3787</a>
+                        <a href=""
+                            style="text-decoration: none; color: white; margin-right: 15px; font-size: 12px;"><img
+                                src="images/envelopecopy.svg" class="img-fluid mx-2" style="width: 20px; height: 20px;">
+                            info@arcade.in</a>
+                        <a href="" style="text-decoration: none; color: white; font-size: 12px;"><img
+                                src="images/phonecopy.svg" class="img-fluid mx-2" style="width: 20px; height: 20px;">
+                            022 2886 3787</a>
                     </div>
                 </div>
 
@@ -43,11 +55,11 @@
                 </div>
             </div>
         </nav>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white pt-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white pt-0 navbar-css">
             <div class="container">
                 <div class="navbar-nav ms-2">
                     <a class="navbar-brand" href="#">
-                        <img src="images/logo.jpg" alt="" width="180" height="80">
+                        <img src="images/logo.jpg" alt="" width="130" height="60">
                     </a>
                     <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -56,9 +68,9 @@
                     </button>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto float-end">
+                    <ul class="navbar-nav ms-auto float-end header-links">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="#"><span style="color:#eb870c;">Home</span></a>
                         </li>
                         <li class="nav-item ms-2">
                             <a class="nav-link" href="#">About Us</a>
@@ -83,88 +95,122 @@
     </header>
     <!--Navigation bar ends-->
     <!--Hero slider starts-->
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        </div>
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-                <img src="images/01.png" class="d-block w-100 img-fluid" alt="heroimage">
-                <div class="d-none d-lg-block text-over-img container">
-                    <p style="color: #eb870c; font-size: 16px; letter-spacing: 8px;">BUILD ANYTHING WITH US</p>
-                    <h5 class="img-text">Dummy Text</h5>
-                    <p class="img-text">Some dummy text to display</p>
-                    <button class="hero-button">Discover More</button>
+            <div class="carousel-item active">
+                <img src="images/01.png" class="d-block w-100" alt="...">
+                <div class="d-none d-md-block">
+                    <div class="text-over-img">
+                        <p style="color: #eb870c; font-size: 16px; letter-spacing: 8px;">BUILD ANYTHING WITH US</p>
+                        <h5 class="img-text">Dummy Text</h5>
+                        <p class="img-text">Some dummy text to display</p>
+                        <button class="hero-button">Discover More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/01.png" class="d-block w-100" alt="...">
+                <div class="d-none d-md-block">
+                    <div class="text-over-img">
+                        <p style="color: #eb870c; font-size: 16px; letter-spacing: 8px;">BUILD ANYTHING WITH US</p>
+                        <h5 class="img-text">Dummy Text</h5>
+                        <p class="img-text">Some dummy text to display</p>
+                        <button class="hero-button">Discover More</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
-        <div class="carousel-indicators ">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active bg-light"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
     </div>
     <!--Hero slider ends-->
-
     <!--About Us starts-->
-    <div class="container center">
-        <p style="letter-spacing: 10px; font-weight: bold; font-size: 16px; text-align: center; margin-top: 80px;"> WE
-            ARE ARCADE GROUP</p>
+    <div class="container center mt-5 mb-5">
+        <p style="letter-spacing: 10px; font-weight: bold; font-size: 14px; text-align: center; margin-bottom: 30px;">
+            WE ARE ARCADE GROUP</p>
         <div class="row">
-            <div class="col-12 col-md-4">
+            <div class="col-md-1 ms-auto float-start">
+                <p style="transform: rotate(-90deg); font-size: 8px; margin-top:100px; ">TEL: 022
+                    1234 1234</p>
+            </div>
+            <div class="col-12 col-md-3">
                 <img src="images/wearearcade.jpg" alt="founder" class="img-fluid rounded-start">
             </div>
-            <div class="col-12 col-md-8 bg-white p-5 p-md-4 mt-2 mt-md-0 d-flex align-items-center rounded-end">
+            <div class="col-12 col-md-7 bg-white p-md-4 mt-2 mt-md-0 d-flex align-items-center">
                 <section>
                     <div class="row">
-                        <div class="col-lg-1" style="background-color: #eb870c; height: 65px; width: 5px;">
-                            <p class="mb-0 me-0"> </p>
+                        <div class="col-lg-1">
+                            <p class="ms-auto float-start" style="background-color: #eb870c;height: 60px;width: 10px; margin-top: -10px;">
+                            </p>
                         </div>
                         <div class="col-lg-11">
-                            <p class="ps-0" style="color: #eb870c;">A Little About us</p>
-                            <h4 class="ps-0">There's more to us than meets the eye</h4>
+                            <p class="ps-0" style="color: #eb870c; margin-left: -30px; margin-top: -10px;">A Little About us</p>
+                            <h4 class="ps-0" style="margin-left: -30px; margin-top: -8px;">There's more to us than meets the eye</h4>
                         </div>
-
                     </div>
 
-                    <p class="mt-5 mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit necessitatibus
+                    <p class="mt-3 mb-4" style=" font-size: 13px; color: rgb(133, 133, 133);">Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Odit
+                        necessitatibus
                         possimus voluptates
-                        dolores blanditiis suscipit consequatur, repellat dicta voluptatem laborum fugiat, pariatur a
+                        dolores blanditiis suscipit consequatur, repellat dicta voluptatem laborum fugiat, pariatur
+                        a
                         eum
                         saepe vero placeat voluptate magnam ex.</p>
-                    <a href="" style="text-decoration: none; color: black;"><img src="images/missioncopy.svg"
-                            class="img-fluid align-text-center" style="width: 50px; height: 50px;"> Vission-Mission</a>
+                    <a href="" style="text-decoration: none; color: black; font-size: 13px; font-weight: 600"><img
+                            src="images/missioncopy.svg" class="img-fluid align-text-center"
+                            style="width: 35px; height: 35px;">
+                        Vission-Mission</a>
                     &nbsp; &nbsp;
-                    <a href="" style="text-decoration: none; color: black;"><img src="images/teamcopy.svg"
-                            class="img-fluid align-text-center" style="width: 50px; height: 50px;"> The core team</a>
+                    <a href="" style="text-decoration: none; color: black; font-size: 13px; font-weight: 600"><img
+                            src="images/teamcopy.svg" class="img-fluid align-text-center"
+                            style="width: 40px; height: 40px;"> The core
+                        team</a>
                     &nbsp; &nbsp;
 
-                    <a href="" style="text-decoration: none; color: black;"><img src="images/achivementcopy.svg"
-                            class="img-fluid align-text-center" style="width: 30px; height: 30px;"> Milestones</a>
+                    <a href="" style="text-decoration: none; color: black; font-size: 13px; font-weight: 600"><img
+                            src="images/achivementcopy.svg" class="img-fluid align-text-center"
+                            style="width: 25px; height: 25px;"> Milestones</a>
                     &nbsp; &nbsp;
-                    <a href="" style="text-decoration: none; color: black;"><img src="images/servicecopy.svg"
-                            class="img-fluid align-text-center" style="width: 30px; height: 30px;"> The management</a>
+                    <a href="" style="text-decoration: none; color: black; font-size: 13px; font-weight: 600"><img
+                            src="images/servicecopy.svg" class="img-fluid align-text-center"
+                            style="width: 25px; height: 25px;"> The
+                        management</a>
+
+
                 </section>
+            </div>
+            <div class="col-md-1 ms-auto float-end">
+                <p style="transform: rotate(-90deg); font-size: 8px; margin-top:100px; ">TEL: 022
+                    1234 1234</p>
             </div>
         </div>
     </div>
     <!--About Us ends-->
 
     <!--Our projects starts-->
-    <div class="p-lg-4" style="background-color: rgba(165, 165, 165, 0.685);">
-        <div class="navbar navbar-expand-lg mb-4">
+    <div class="p-lg-4" style="background-color: rgba(187, 187, 187, 0.507);">
+        <div class="navbar navbar-expand-lg mb-4 mt-5 project-css">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <p style="font-weight: bold; font-size: 30px; margin: auto; justify-content: center;">OUR <span
-                                style="color: #eb870c;">PROJECTS</span></p>
+                        <p style="font-weight: bold; font-size: 30px; margin: auto; justify-content: center;">OUR
+                            <span style="color: #eb870c;">PROJECTS</span>
+                        </p>
                     </div>
                     <div class="col-lg-4 justify-content-center"
                         style="background-color: black; height: 1.5px; width: 50px; margin: auto; justify-content: center">
@@ -174,58 +220,71 @@
                 <div class="ms-auto float-end">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="project-button1" href="#">Features</a>
+                            <a class="project-button1" href="#">ONGOING</a>
                         </li>
                         <li class="nav-item">
-                            <a class="project-button2" href="#">Pricing</a>
+                            <a class="project-button2" href="#">UPCOMING</a>
                         </li>
                     </ul>
                 </div>
-            </div>            
-        </div>
-
-        <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
-              <div class="align-center">
-                <img src="images/project-banner.jpg" class="d-block" alt="04" style="width:800px; height: 50%; margin: auto; justify-content: center;">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" style="margin-bottom: 60px;" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/project-banner.jpg" class="d-block"
+                        style="width:900px; height: 50%; margin: auto; justify-content: center;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/01.png" class="d-block"
+                        style="width:900px; height: 50%; margin: auto; justify-content: center;" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
+        </div>
     </div>
 
     <!--Our projects ends-->
 
     <!--Life Investors starts-->
-    <div class="container center mt-4">
-        <div class="row">
+    <div class="container center">
+        <div class="row mt-5 mb-5 investor-css">
 
             <div class="col-12 col-md-6 bg-white p-5 p-md-4 mt-2 mt-md-0 d-flex align-items-center rounded-end">
                 <section>
                     <div class="row">
-                        <div class="col-lg-1" style="background-color: #eb870c; height: 105px; width: 5px;">
-                            <p class="mb-0 me-0"> </p>
+                        <div class="col-lg-1">
+                            <p class="ms-auto float-start" style="background-color: #eb870c;height: 105px;width: 10px;">
+                            </p>
                         </div>
                         <div class="col-lg-11">
-                            <p class="ps-0" style="color: rgba(100, 100, 100, 0.836); letter-spacing: 5px; font-weight: bold;">
+                            <p class="ps-0"
+                                style="color: rgba(100, 100, 100, 0.836); letter-spacing: 5px; font-weight: bold; margin-left: -10px;">
                                 ARCADE</p>
-                            <h2 class="ps-0 mb-0">Life investors,</h2>
+                            <h2 class="ps-0 mb-0" style="margin-left: -10px;">Life investors,</h2>
                             <p class="ps-0 mb-0"
-                                style="font-size: 20px; color: rgb(15, 15, 15); font-weight: bold; margin-top: -20px;">
+                                style="font-size: 20px; color: rgb(15, 15, 15); font-weight: bold; margin-top: -20px; margin-left: -10px;">
                                 rather than developers<span style="font-size: 40px; color: #feb900;">.</span></p>
                         </div>
                     </div>
 
-                    <p class="mt-3 mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit necessitatibus
+                    <p class="mt-3 mb-3" style="color: rgb(133, 133, 133); font-size: 13px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
+                        necessitatibus
                         possimus voluptates
-                        dolores blanditiis suscipit consequatur, repellat dicta voluptatem laborum fugiat, pariatur a
+                        dolores blanditiis suscipit consequatur, repellat dicta voluptatem laborum fugiat, pariatur
+                        a
                         eum
                         saepe vero placeat voluptate magnam ex.</p>
-                    <button class="hero-button">
+                    <button class="investor-button">
                         Take a look
                     </button>
                 </section>
@@ -239,7 +298,7 @@
     <!--Life Investors ends-->
 
     <!--Testimonial starts-->
-    <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="images/09.png" class="d-block w-100" alt="...">
@@ -247,34 +306,58 @@
                     <div class="d-none d-md-block text-testimonial-img">
                         <img src="images/quote.svg" alt="quote" style="width: 50px; height: 50px; margin-bottom: 50px;">
                         <h5><span style="color: orange;">Our </span> Testimonial</h5>
-                        <p style="padding: 20px 80px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
+                        <p style="padding: 20px 80px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Esse
                             cumque fuga nihil, ea veritatis
-                            earum obcaecati, repellat, ad itaque sapiente vero tempora optio rerum! Itaque reiciendis
+                            earum obcaecati, repellat, ad itaque sapiente vero tempora optio rerum! Itaque
+                            reiciendis
                             veritatis officia repellendus alias!</p>
-                        <p style="margin-top: 60px; font-size: 12px;"><span style="color: orange;">Logan Cee</span> -
+                        <p style="margin-top: 60px; font-size: 12px;"><span style="color: orange;">Logan Cee</span>
+                            -
                             CEO at <span style="text-decoration: underline; color: white;">Typo INC</span></p>
                     </div>
                 </div>
-
+            </div>
+            <div class="carousel-item">
+                <img src="images/09.png" class="d-block w-100" alt="...">
+                <div class="container">
+                    <div class="d-none d-md-block text-testimonial-img">
+                        <img src="images/quote.svg" alt="quote" style="width: 50px; height: 50px; margin-bottom: 50px;">
+                        <h5><span style="color: orange;">Our </span> Testimonial</h5>
+                        <p style="padding: 20px 80px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Esse
+                            cumque fuga nihil, ea veritatis
+                            earum obcaecati, repellat, ad itaque sapiente vero tempora optio rerum! Itaque
+                            reiciendis
+                            veritatis officia repellendus alias!</p>
+                        <p style="margin-top: 60px; font-size: 12px;"><span style="color: orange;">Logan Cee</span>
+                            -
+                            CEO at <span style="text-decoration: underline; color: white;">Typo INC</span></p>
+                    </div>
+                </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
+            <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
+            <span class="visually-hidden">Next</span>
         </button>
     </div>
     <!--Testimonial Ends-->
 
     <!--Schedule visit starts-->
-    <div class="row">
+    <div class="row row-css">
         <div class="col bg-light">
-            <form class="p-5 m-5">
+            <div class="col">
+                <p style="transform: rotate(-90deg); font-size: 12px; letter-spacing: 20px; margin-left: -300px;">
+                    SCHEDULE A CALL</p>
+            </div>
+            <form class="col form-css">
                 <div class="mb-4">
                     <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp"
                         placeholder="Name">
@@ -298,54 +381,55 @@
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                         placeholder="Message"></textarea>
                 </div>
-                <button type="submit" class="submit-button">Submit Now</button>
+                <button type="submit" class="submit-button">SUBMIT NOW</button>
             </form>
         </div>
         <div class="col">
             <div class="container mt-lg-5">
                 <div class="row">
-                    <div class="col-lg-2 p-2 m-5 m-md-0">
-                        <img src="images/icon1.jpg" alt="icon1" style="width: 110px; height: 80px;">
+                    <div class="col-lg-2 m-5 m-md-0">
+                        <img src="images/icon1.jpg" alt="icon1" style="width: 100px; height: 90px; margin-bottom: 10px;">
                     </div>
                     <div class="col-lg-8 p-2 ms-4 mt-4">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, doloribus. Unde numquam
+                        <p style="font-size: 12px; margin-right: 80px">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque,
+                            doloribus. Unde numquam
                             repudiandae modi fugit eum
                         </p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-2 p-2 m-5 m-md-0">
-                        <img src="images/icon2.jpg" alt="icon1" style="width: 110px; height: 80px;">
+                    <div class="col-lg-2 m-5 m-md-0">
+                        <img src="images/icon2.jpg" alt="icon1" style="width: 110px; height: 80px; margin-bottom: 10px;">
                     </div>
-                    <div class="col-lg-8 p-2 ms-4 mt-4">
-                        <p>Lorem ipsum, dolor
+                    <div class="col-lg-8 ms-4 mt-4">
+                        <p style="font-size: 12px; margin-right: 80px">Lorem ipsum, dolor
                         </p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-2 p-2 m-5 m-md-0">
-                        <img src="images/icon3.jpg" alt="icon1" style="width: 110px; height: 80px;">
+                    <div class="col-lg-2 m-5 m-md-0">
+                        <img src="images/icon3.jpg" alt="icon1" style="width: 110px; height: 70px; margin-bottom: 10px;">
                     </div>
-                    <div class="col-lg-8 p-2 ms-4 mt-4">
-                        <p>Lorem ipsum, dolor sit amet
+                    <div class="col-lg-8 ms-4 mt-4">
+                        <p style="font-size: 12px; margin-right: 80px">Lorem ipsum, dolor sit amet
                         </p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-2 p-2 m-5 m-md-0">
-                        <img src="images/icon4.jpg" alt="icon1" style="width: 110px; height: 80px;">
+                    <div class="col-lg-2 m-5 m-md-0">
+                        <img src="images/icon4.jpg" alt="icon1" style="width: 110px; height: 70px; margin-bottom: 10px;">
                     </div>
-                    <div class="col-lg-8 p-2 ms-4 mt-4">
-                        <p>Lorem ipsum,
+                    <div class="col-lg-8 ms-4 mt-4">
+                        <p style="font-size: 12px; margin-right: 80px">Lorem ipsum,
                         </p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-2 p-2 m-5 m-md-0">
-                        <img src="images/icon5.jpg" alt="icon1" style="width: 110px; height: 80px;">
+                    <div class="col-lg-2 m-5 m-md-0">
+                        <img src="images/icon5.jpg" alt="icon1" style="width: 110px; height: 70px;">
                     </div>
                     <div class="col-lg-8 p-2 ms-4 mt-4">
-                        <p>Lorem ipsum, dolor sit amet
+                        <p style="font-size: 12px; margin-right: 80px">Lorem ipsum, dolor sit amet
                         </p>
                     </div>
                 </div>
@@ -358,62 +442,63 @@
     <div class="p-5" style="background-color: #393939;">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col footer-css">
                     <div class="row mb-lg-3">
-                        <img src="images/footerlogo.jpg" alt="" style="width: 220px; height: 80px;">
+                        <img src="images/footerlogo.jpg" alt="" style="width: 200px; height: 80px;">
                     </div>
                     <div class="row">
-                        <div class="col-lg-2">
+                        <div class="col">
                             <a href=""><img src="images/facebookcopy.svg" class="img-fluid mx-2"
-                                style="width: 20px; height: 20px;"></a>
+                                    style="width: 20px; height: 20px;"></a>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col">
                             <a href=""><img src="images/twittercopy.svg" class="img-fluid mx-2"
-                                style="width: 20px; height: 20px;"></a>
+                                    style="width: 20px; height: 20px;"></a>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col">
                             <a href=""><img src="images/googlecopy.svg" class="img-fluid mx-2"
-                                style="width: 20px; height: 20px;"></a>
+                                    style="width: 20px; height: 20px;"></a>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col">
                             <a href=""><img src="images/instagramcopy.svg" class="img-fluid"
-                                style="width: 20px; height: 20px;"></a>
+                                    style="width: 20px; height: 20px;"></a>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    
-                        <a href="#" class="footerlinks">About us</a><br>
-                    
-                        <a href="#" class="footerlinks">Our Projects</a><br>
-                    
-                        <a href="#" class="footerlinks">Investors</a><br>
-                    
-                        <a href="#" class="footerlinks">Careers</a><br>
-                    
-                        <a href="#" class="footerlinks">Contact Us</a><br>
-                    
+                <div class="col second-col">
+
+                    <a href="#" class="footerlinks">About us</a><br>
+
+                    <a href="#" class="footerlinks">Our Projects</a><br>
+
+                    <a href="#" class="footerlinks">Investors</a><br>
+
+                    <a href="#" class="footerlinks">Careers</a><br>
+
+                    <a href="#" class="footerlinks">Contact Us</a><br>
+
                 </div>
                 <div class="col">
-    
-                        <a href="#" class="footerlinks">Newsroom</a><br>
-                    
-                        <a href="#" class="footerlinks">Customer Care</a><br>
-                    
-                        <a href="#" class="footerlinks">Sitemap</a><br>
-                    
-                        <a href="#" class="footerlinks">Privacy</a><br>
-                    
-                        <a href="#" class="footerlinks">Disclaimer</a>
-                    
+
+                    <a href="#" class="footerlinks">Newsroom</a><br>
+
+                    <a href="#" class="footerlinks">Customer Care</a><br>
+
+                    <a href="#" class="footerlinks">Sitemap</a><br>
+
+                    <a href="#" class="footerlinks">Privacy</a><br>
+
+                    <a href="#" class="footerlinks">Disclaimer</a>
+
                 </div>
-                <div class="col">
+                <div class="col footer-css2">
                     <div class="row">
                         <div class="col-lg-1">
                             <img src="images/locationcopy.svg" alt="" style="width: 20px; height: 20px;">
                         </div>
                         <div class="col ms-lg-4">
-                            <p class="footertext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sequi delectus iure veniam dicta nisi odit.</p>
+                            <p class="footertext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                sequi delectus iure veniam dicta nisi odit.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -450,14 +535,22 @@
                     </div>
                 </div>
             </div>
+
         </div>
+
     </div>
+
+    <p
+        style="text-align: center; background-color: rgb(20, 20, 20); color: rgba(255, 255, 255, 0.849); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px;">
+        &copy Arcade Group 2019, all rights reserved</p>
+
     <!--Footer ends-->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
